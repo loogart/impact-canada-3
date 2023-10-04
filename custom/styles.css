@@ -1,0 +1,6 @@
+:root {
+    --blue: #0e4164;
+    --white: #ffffff;
+}
+
+h1 { color: var(--blue); }
