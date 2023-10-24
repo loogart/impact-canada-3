@@ -64,7 +64,33 @@ main{
 .bg-navy-darkest {
     background-color: var(--navy-darkest);
     color: white;
+}
 
+a,a:visited{
+    color:var(--navy)
+}
+
+.text-white {
+    color: white!important;
+}
+
+.text-red {
+    color:var(--flat-red)!important;
+}
+
+.text-blue {
+    color:var(--baby-blue)!important;
+}
+
+.text-parca-green {
+    color:var(--parca-green)!important;
+}
+
+.text-teal {
+    color:var(--teal-deal)!important;
+}
+.text-dark {
+    color:var(--navy-darkest)!important;
 }
 
 .bg-besci-teal {
@@ -82,7 +108,6 @@ main{
     width:100%;
     padding:12px 0;
     background-color: var(--navy-light);
-    
 }
 
 .fip{
@@ -160,7 +185,6 @@ a.language-toggle{
 .d-flex{
     display:flex;
     flex-wrap: wrap;
-    align-items: stretch;
 }
 
 
@@ -182,10 +206,13 @@ a.language-toggle{
 
 /* grid top area */
 
-.item1 { grid-area: header; }
-.item2 { grid-area: left;}
-.item3 { grid-area: middle;}
-.item4 { grid-area: right;}
+.item1 { grid-area: header;}
+.item2 { grid-area: left;display: flex;
+    flex-direction: column;}
+.item3 { grid-area: middle;display: flex;
+    flex-direction: column;}
+.item4 { grid-area: right;display: flex;
+    flex-direction: column;}
 
 .grid-container {
   display: grid;
@@ -195,7 +222,7 @@ a.language-toggle{
   gap: 15px;
 }
 
-@media(min-width:768px) and (max-width:991px){
+@media(min-width:421px) and (max-width:991px){
     .grid-container {
         grid-template-areas:
           'header header'
@@ -204,7 +231,7 @@ a.language-toggle{
       }
 }
 
-@media(max-width:767px){
+@media(max-width:420px){
     .grid-container {
         grid-template-areas:
           'header'
@@ -225,16 +252,17 @@ a.language-toggle{
 }
 
 .grid-item-bl{
-    display: block;
-    height:100%;
+    display: flex;
+    flex-direction: column;
     border-radius: 24px;
     overflow: hidden;
-    
+    flex:1;
 }
 
 .grid-item-bl-header{
     width:100%;
     height:140px;
+    position: relative;
 }
 
 .grid-item-bl-header-1{
@@ -261,23 +289,23 @@ a.language-toggle{
 
 }
 
-.grid-item-bl-footer{
-    padding:20px;
+.grid-item-bl-body{
+    padding:50px 20px 10px;
     position: relative;
-
-
 }
 
 .icon-business{
     width:69px;
     height:69px;
+    padding:6px;
     position: relative;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
-    margin-bottom: 20px;
+    /* margin-top: -40px; */
+    left:20px;
+    top:100px;
 }
 
 .icon-business-1{
@@ -291,6 +319,27 @@ a.language-toggle{
 .icon-business-3{
     background-color: var(--fellowship-light-af);
     border: 3px solid #EFF5F9;
+}
+
+ul.list-card{
+    display: block;
+}
+ul.list-card li:not(:last-child){
+    border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+ul.list-card.dark li:not(:last-child){
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+ul.list-card li a{
+    display: block;
+    text-decoration: none;
+    padding:10px 0;
+}
+
+ul.list-card li a:hover{
+    background-color: rgba(0,0,0,.1);
 }
 
 .hero-image{
