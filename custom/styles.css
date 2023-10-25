@@ -13,6 +13,12 @@ h2{
     margin-top: 0;
 }
 
+@media (max-width:420px){
+    h1{
+        font-size: 2em;
+    }
+}
+
 /* Defaults */
 body{   
     font-family: 'Roboto', sans-serif;
@@ -258,6 +264,14 @@ a.language-toggle{
     height:100%;
     display: flex;
     align-items: center;
+}
+
+
+@media(max-width:420px){
+    .grid-item-hero{
+        text-align: center;
+        padding: 20px;
+    }
 }
 
 .grid-item-bl{
