@@ -512,10 +512,6 @@ footer li a{
 }
 
 
-.footer-brand{
-    color:white;
-}
-
 .gc-main-footer{
     padding-top:3em;
     padding-bottom:1em
@@ -533,7 +529,18 @@ footer li a{
     object-position: bottom;
 }
 
+a.footer-brand {
+    color:white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 @media (max-width:991px){
+    .gc-main-footer{
+        text-align: center;
+    }
+    
     .gc-sub-footer-alignment {
         align-items: flex-end;
     }
