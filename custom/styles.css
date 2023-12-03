@@ -566,7 +566,6 @@ ul.list-card li a:hover {
 .btn {
   border: 1px solid transparent;
   border-radius: 69px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .btn-primary {
@@ -610,7 +609,6 @@ ul.list-card li a:hover {
     background-color: white;
     border-color: white;
     color:var(--navy-darkest);
-    font-weight: 600;
   }
   
 .btn-white.active.focus,
