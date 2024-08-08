@@ -14,7 +14,6 @@ fetch(file)
 }
 
 // Load head, header, and footer
-loadHTML('html/head.html', 'head', true);
 loadHTML('html/header.html', '#header-placeholder');
 loadHTML('html/footer.html', '#footer-placeholder');
 

@@ -12,6 +12,7 @@ h6 {
 
 h1 {
   font-size: 3em;
+  margin-top: 0;
 }
 
 h2 {
@@ -374,15 +375,30 @@ a.language-toggle {
 
 /* CSS Aug 8 */
 
+section{
+  overflow: hidden;
+}
+
+section.base{
+  padding-top:69px;
+  padding-bottom:69px;
+}
+
 .row-wrap{
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
 }
+
 @media (max-width: 767px) {
   .row-wrap{
     justify-content: center;
 
+  }
+  section.base{
+    overflow: hidden;
+    padding-top:20px;
+    padding-bottom:20px;
   }
 }
 
@@ -516,7 +532,7 @@ a.card:hover{
 
 
 .text-narrow{
-  max-width:600px;
+  max-width:669px;
   margin:auto;
 }
 
@@ -524,6 +540,32 @@ a.card:hover{
   font-size: 1.25em;
   font-weight: 600;
   display: block;
+}
+
+.hero-icon{
+  width:80px;
+  height:80px;
+  object-fit: contain;
+  object-position: 0%;
+  margin-bottom:10px;
+}
+
+.nav-secondary{
+  padding-left:1.5em;
+  border-left: 8px solid var(--flat-red)
+}
+
+.nav-secondary li {
+  list-style: none;
+  margin-bottom:5px;
+}
+
+.nav-secondary li a{
+  color:var(--navy-darkest);
+}
+
+.nav-secondary li a:hover{
+  color:var(--navy);
 }
 
 /* Spacing */
@@ -781,27 +823,27 @@ ul.list-card li a:hover {
 .open > .btn-white.dropdown-toggle.focus,
 .open > .btn-white.dropdown-toggle:focus,
 .open > .btn-white.dropdown-toggle:hover {
-    background-color: var(--bg-netural);
+    background-color: var(--bg-neutral);
     border-color: var(--dark-af);
 }
 
 .btn-white.active,
 .btn-white:active,
 .open > .btn-white.dropdown-toggle {
-  background-color: var(--bg-netural);
+  background-color: var(--bg-neutral);
   border-color: var(--dark-af);
   -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
     box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .btn-white:hover {
-    border-color: var(--bg-netural);
+    border-color: var(--bg-neutral);
     border-color: var(--dark-af);
 }
 
 .btn-white.focus,
 .btn-white:focus {
-    background-color: var(--bg-netural);
+    background-color: var(--bg-neutral);
     border-color: var(--dark-af);
 }
 
