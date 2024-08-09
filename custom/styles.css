@@ -6,7 +6,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6  {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -34,7 +39,7 @@ h2 {
   --navy-darkest: #10172d;
   --baby-blue: #469ee1;
   --flat-red: #e25456;
-  --fuschia: #d84190;
+  --fuschia: #D84E50;
   --light-af: #d9e9f6;
   --teal-deal: #51e7f2;
   --parca-green: #9fc363;
@@ -160,6 +165,16 @@ a:visited {
 .bg-fellowship-light-af {
   background-color: var(--fellowship-light-af);
   color: var(--navy-darkest);
+}
+
+.bg-red {
+  background-color: var(--flat-red);
+  color: white;
+}
+
+.cta-box{
+  padding:4em;
+  border-radius: 24px;
 }
 
 .super-nav {
@@ -390,6 +405,11 @@ section.base{
   flex-grow: 1;
 }
 
+.img-panorama{
+  width:100%;
+
+}
+
 @media (max-width: 767px) {
   .row-wrap{
     justify-content: center;
@@ -399,6 +419,12 @@ section.base{
     overflow: hidden;
     padding-top:20px;
     padding-bottom:20px;
+  }
+  .img-panorama{
+    width:100%;
+    height:300px;
+    object-fit: cover;    
+    object-position: 20%;
   }
 }
 
@@ -414,6 +440,7 @@ a.card{
   height:100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 a.card:hover{
@@ -421,13 +448,14 @@ a.card:hover{
   color:var(--navy);
   border: 1px solid var(--light-af);
   box-shadow:
-  0px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  0px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  0px 100px 80px rgba(0, 0, 0, 0.07)
+  0px 3.5px 5.3px rgba(0, 0, 0, 0.028),
+  0px 11.6px 17.9px rgba(0, 0, 0, 0.042),
+  0px 52px 80px rgba(0, 0, 0, 0.07)
 ;
 }
 
 .img-card {
+  display: block;
   width:100%;
   height:169px;
   object-fit: cover;
@@ -566,6 +594,13 @@ a.card:hover{
 
 .nav-secondary li a:hover{
   color:var(--navy);
+}
+
+.icon-100{
+  width:100px;
+  height:100px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 /* Spacing */
@@ -934,6 +969,35 @@ ul.list-card li a:hover {
 .logo-our-impact{
     height:1.5em;
     margin-right: 15px;
+}
+
+/* details summary */
+
+.accordion details summary {
+  border: none;
+  border-bottom: 1px solid var(--navy-darkest);
+  border-radius: 0;
+  color: var(--impact-navy-dark);
+  padding: 20px;
+  text-decoration: none;
+}
+
+.accordion details[open] {
+  border: none;
+  border-bottom: 1px solid var(--navy-darkest);
+  border-radius: 0;
+}
+
+.accordion details > summary {
+  list-style-type: '+';
+  font-size: 2em;
+}
+
+.accordion details[open] > summary {
+  list-style-type: '−';
+}
+.accordion details[open] {
+  padding-bottom: 1em;
 }
 
 /* footer */
