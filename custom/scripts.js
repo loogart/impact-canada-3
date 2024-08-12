@@ -23,6 +23,22 @@ AOS.init();
 // myHeading.textContent = "Impact Canada";
 
 
+// prototyping for dynamic topics 
+
+function saveTitle(title) {
+  sessionStorage.setItem('pageTitle', title);
+}
+
+// Retrieve the title from sessionStorage
+const title = sessionStorage.getItem('pageTitle');
+
+// If there is a title stored, update the H1 tag
+if (title) {
+  document.getElementById('page-title').innerText = title;
+}
+
+// prototyping for about team (not perfect)
+
 document.addEventListener('DOMContentLoaded', function() {
   // Load JSON data
   fetch('custom/teamData.json') // Ensure this path is correct
