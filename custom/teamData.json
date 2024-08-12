@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Rodney Ghali",
+        "title": "Assistant Secretary to the Cabinet",
+        "bio": "Full bio text for Rodney Ghali",
+        "image": "./img/team-rodney.png",
+        "bgColorClass": "bg-navy"
+    },
+    {
+        "name": "Chad Hartnell",
+        "title": "Assistant Secretary to the Cabinet",
+        "bio": "Full bio text for Chad Hartnell",
+        "image": "./img/team-chad-1.png",
+        "bgColorClass": "bg-fuschia"
+    },
+    {
+        "name": "Laura Di Paolo",
+        "title": "Director of Operations",
+        "bio": "Full bio text for Laura Di Paolo",
+        "image": "./img/team-laura.png",
+        "bgColorClass": "bg-red"
+    },
+    {
+        "name": "Dave Donovan",
+        "title": "Director of Operations",
+        "bio": "Full bio text for Dave Donovan",
+        "image": "./img/team-dave.png",
+        "bgColorClass": "bg-blue"
+    }
+]

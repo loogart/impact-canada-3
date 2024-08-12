@@ -38,8 +38,8 @@ h2 {
   --navy-dark: #182851;
   --navy-darkest: #10172d;
   --baby-blue: #469ee1;
-  --flat-red: #e25456;
-  --fuschia: #D84E50;
+  --flat-red: #D84E50;
+  --fuschia: #D84190;
   --light-af: #d9e9f6;
   --teal-deal: #51e7f2;
   --parca-green: #9fc363;
@@ -82,13 +82,44 @@ main {
   color: white;
 }
 
+.bg-besci-teal {
+  background-color: var(--besci-teal);
+  color: white;
+}
+
 .bg-navy-dark {
   background-color: var(--navy-dark);
   color: white;
 }
+
 .bg-navy-darkest {
   background-color: var(--navy-darkest);
   color:var(--light-af);
+}
+
+.bg-fuschia {
+  background-color: var(--fuschia);
+  color: white;
+}
+
+.bg-red {
+  background-color: var(--flat-red);
+  color: white;
+}
+
+.bg-blue {
+  background-color: var(--baby-blue);
+  color: white;
+}
+
+.bg-green {
+  background-color: var(--parca-green);
+  color: white;
+}
+
+.bg-yellow {
+  background-color: var(--ympact);
+  color:var(--navy-darkest);
 }
 
 .bg-white {
@@ -107,6 +138,11 @@ main {
 
 .bg-neutral{
   background-color: var(--bg-neutral);
+}
+
+.bg-fellowship-light-af {
+  background-color: var(--fellowship-light-af);
+  color: var(--navy-darkest);
 }
 
 /* Borders */
@@ -157,20 +193,6 @@ a:visited {
   color: var(--navy-darkest) !important;
 }
 
-.bg-besci-teal {
-  background-color: var(--besci-teal);
-  color: white;
-}
-
-.bg-fellowship-light-af {
-  background-color: var(--fellowship-light-af);
-  color: var(--navy-darkest);
-}
-
-.bg-red {
-  background-color: var(--flat-red);
-  color: white;
-}
 
 .cta-box{
   padding:4em;
@@ -443,6 +465,19 @@ a.card{
   width: 100%;
 }
 
+a.card-team{
+  text-decoration: none;
+  color:var(--navy-darkest);
+  overflow: hidden;
+  border-radius: 24px;
+  display: block;
+  transition:all .15s ease-out;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 a.card:hover{
   background-color:#fff;
   color:var(--navy);
@@ -450,8 +485,7 @@ a.card:hover{
   box-shadow:
   0px 3.5px 5.3px rgba(0, 0, 0, 0.028),
   0px 11.6px 17.9px rgba(0, 0, 0, 0.042),
-  0px 52px 80px rgba(0, 0, 0, 0.07)
-;
+  0px 52px 80px rgba(0, 0, 0, 0.07);
 }
 
 .img-card {
@@ -460,6 +494,24 @@ a.card:hover{
   height:169px;
   object-fit: cover;
   background-color:#eee;
+}
+
+.img-card-team {
+  display: block;
+  width:100%;
+  height:169px;
+  object-fit: contain;
+  object-position: bottom;
+  border-radius: 24px;
+}
+
+.img-card-team-modal{
+  display: block;
+  width:100%;
+  height:200px;
+  object-fit: contain;
+  object-position: bottom;
+  border-radius: 8px 8px 0 0;
 }
 
 .card-body{
@@ -568,6 +620,10 @@ a.card:hover{
   font-size: 1.25em;
   font-weight: 600;
   display: block;
+}
+
+.heading-sub{
+  padding-bottom:
 }
 
 .hero-icon{
