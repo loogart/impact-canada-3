@@ -112,6 +112,11 @@ main {
   color: white;
 }
 
+.bg-teal {
+  background-color: var(--teal-deal);
+  color:var(--navy-darkest);
+}
+
 .bg-green {
   background-color: var(--parca-green);
   color: white;

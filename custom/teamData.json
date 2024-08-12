@@ -1,30 +1,62 @@
 [
     {
         "name": "Rodney Ghali",
-        "title": "Assistant Secretary to the Cabinet",
-        "bio": "Full bio text for Rodney Ghali",
-        "image": "./img/team-rodney.png",
+        "position": "Big Boss",
+        "bio": "Rodney Ghali is the Big Boss at Impact Canada.",
+        "photo": "./img/team-rodney.png",
         "bgColorClass": "bg-navy"
     },
     {
         "name": "Chad Hartnell",
-        "title": "Assistant Secretary to the Cabinet",
-        "bio": "Full bio text for Chad Hartnell",
-        "image": "./img/team-chad-1.png",
+        "position": "Medium Boss 1",
+        "bio": "Chad Hartnell is Medium Boss 1 at Impact Canada.",
+        "photo": "./img/team-chad-1.png",
         "bgColorClass": "bg-fuschia"
     },
     {
         "name": "Laura Di Paolo",
-        "title": "Director of Operations",
-        "bio": "Full bio text for Laura Di Paolo",
-        "image": "./img/team-laura.png",
+        "position": "Medium Boss 2",
+        "bio": "Laura Di Paolo is Medium Boss 2 at Impact Canada.",
+        "photo": "./img/team-laura.png",
         "bgColorClass": "bg-red"
     },
     {
-        "name": "Dave Donovan",
-        "title": "Director of Operations",
-        "bio": "Full bio text for Dave Donovan",
-        "image": "./img/team-dave.png",
+        "name": "Dave Donnovan",
+        "position": "Small Boss 1",
+        "bio": "Dave Donnovan is Small Boss 1 at Impact Canada.",
+        "photo": "./img/team-dave.png",
         "bgColorClass": "bg-blue"
+    }
+    ,
+    {
+        "name": "Habernation",
+        "position": "Small Boss 2",
+        "bio": "Habernation is Small Boss 2 at Impact Canada.",
+        "photo": "./img/team-mike-haber.png",
+        "bgColorClass": "bg-teal"
+    }
+    ,
+    {
+        "name": "Luke Babad",
+        "position": "Small Boss 3",
+        "bio": "Luke Babad is Small Boss 3 at Impact Canada.",
+        "photo": "./img/team-luke.png",
+        "bgColorClass": "bg-light"
+    }
+    ,
+    {
+        "name": "Kieran F.",
+        "position": "Small Boss 4",
+        "bio": "Kieran F is Small Boss 4 at Impact Canada.",
+        "photo": "./img/team-kieran.png",
+        "bgColorClass": "bg-yellow"
+    }
+    ,
+    {
+        "name": "Saskia J.",
+        "position": "Small Boss 5",
+        "bio": "Saskia J is Small Boss 5 at Impact Canada.",
+        "photo": "./img/team-saskia.png",
+        "bgColorClass": "bg-fellowship-light-af"
     }
 ]
