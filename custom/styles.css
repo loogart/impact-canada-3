@@ -87,6 +87,12 @@ main {
   color: white;
 }
 
+.bg-besci-teal-light {
+  background-color: #0B6D83;
+  color: white;
+}
+
+
 .bg-navy-dark {
   background-color: var(--navy-dark);
   color: white;
@@ -465,7 +471,6 @@ a.card{
   color:var(--navy-darkest);
   overflow: hidden;
   border-radius: 24px;
-  display: block;
   background-color:#f9f9f9;
   transition:all .15s ease-out;
   border: 1px solid #f3f3f3;
@@ -480,12 +485,43 @@ a.card-team{
   color:var(--navy-darkest);
   overflow: hidden;
   border-radius: 24px;
-  display: block;
   transition:all .15s ease-out;
   height:100%;
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+a.card-publication{
+  text-decoration: none;
+  color:var(--navy-darkest);
+  transition:all .15s ease-out;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-neutral);
+  width: 100%;
+  gap:20px;
+  n
+}
+
+a.card-publication:hover img{
+  border: 1px solid var(--light-af);
+  box-shadow:
+  0px 3.5px 5.3px rgba(0, 0, 0, 0.028),
+  0px 11.6px 17.9px rgba(0, 0, 0, 0.042),
+  0px 52px 80px rgba(0, 0, 0, 0.07);
+}
+
+
+.img-card-publication {
+  display: flex;
+  width:150px;
+  height:200px;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition:all .15s ease-out;
 }
 
 a.card:hover{
@@ -523,6 +559,7 @@ a.card:hover{
   object-position: bottom;
   border-radius: 8px 8px 0 0;
 }
+
 
 .card-body{
   height:100%;
@@ -643,6 +680,10 @@ a.card:hover{
 .nav-secondary{
   padding-left:1.5em;
   border-left: 8px solid var(--flat-red)
+}
+
+.nav-secondary__besci{
+  border-color: var(--besci-teal)
 }
 
 .nav-secondary li {
