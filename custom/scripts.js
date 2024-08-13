@@ -88,3 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Ensure the modal is hidden initially
   $('#centred-popup').addClass('wb-inv');
 });
+
+//table prototype
+
+let table = new DataTable('#myTable');
