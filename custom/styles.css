@@ -345,21 +345,27 @@ a.language-toggle {
 .item1 {
   grid-area: header;
 }
-.item2 {
+.itemChallenge {
   grid-area: left;
   display: flex;
   flex-direction: column;
 }
-.item3 {
+.itemBeSci {
   grid-area: middle;
   display: flex;
   flex-direction: column;
 }
-.item4 {
+.itemData {
   grid-area: right;
   display: flex;
   flex-direction: column;
 }
+.itemFellow {
+  grid-area: four;
+  display: flex;
+  flex-direction: column;
+}
+
 .item5 {
     grid-area: bottom1;
   }
@@ -378,7 +384,8 @@ a.language-toggle {
   display: grid;
   grid-template-areas:
     "header header header header header header"
-    "left left middle middle right right"
+    "left left left middle middle middle"
+    "right right right four four four"
     "bottom1 bottom1 bottom1 bottom2 bottom2 bottom2"
     "bottom1 bottom1 bottom1 bottom3 bottom3 bottom3"
     "full full full full full full";
@@ -390,8 +397,8 @@ a.language-toggle {
     grid-template-areas:
       "header header"
       "left middle"
-      "right bottom1"
-      "bottom2 bottom3"
+      "right four"
+      " bottom1 bottom2 bottom3"
       "full full";
   }
 }
@@ -401,8 +408,9 @@ a.language-toggle {
     grid-template-areas:
       "header"
       "left"
-      " middle"
+      "middle"
       "right"
+      "four"
       "bottom1"
       "bottom2"
       "bottom3"
@@ -653,6 +661,15 @@ a.card__dark .card-label{
   background-position: 12px 50%;
   background-repeat: no-repeat;
 }
+.card-label__data{
+  background-color: var(--navy-darkest);
+  color: white;
+  padding-left:32px;
+  background-image: url(../img/logo-data.svg);
+  background-size: 12px;
+  background-position: 12px 50%;
+  background-repeat: no-repeat;
+}
 
 .card-heading-eyebrow{
   font-size: .9em;
@@ -741,6 +758,10 @@ a.card__dark .card-label{
 
 .nav-secondary__blue{
   border-color: var(--baby-blue)
+}
+
+.nav-secondary__navy{
+  border-color: var(--navy)
 }
 
 .nav-secondary li {
@@ -914,6 +935,13 @@ h2.feedback-title{
   background-size: cover;
 }
 
+.grid-item-bl-header-4 {
+  background-image: url(../img/header-data.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
 .grid-item-bl-body {
   padding: 50px 20px 10px;
   position: relative;
@@ -943,6 +971,10 @@ h2.feedback-title{
 .icon-business-3 {
   background-color: var(--fellowship-light-af);
   border: 3px solid #eff5f9;
+}
+.icon-business-4 {
+  background-color: var(--navy-darkest);
+  border: 3px solid var(--navy-dark);
 }
 
 ul.list-card {
