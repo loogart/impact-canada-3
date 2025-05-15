@@ -1799,6 +1799,49 @@ blockquote.red{
 }
 
 
+.btn-besci, .btn-besci.visited,
+.btn-besci:visited  {
+  background-color: #0B6D83;
+  border-color: #0B6D83;
+  color:white;
+}
+
+.btn-besci.active.focus,
+.btn-besci.active:focus,
+.btn-besci.active:hover,
+.btn-besci:active.focus,
+.btn-besci:active:focus,
+.btn-besci:active:hover,
+.open > .btn-besci.dropdown-toggle.focus,
+.open > .btn-besci.dropdown-toggle:focus,
+.open > .btn-besci.dropdown-toggle:hover {
+  background-color: #074d5c;
+  border-color: var(--light-af);
+  color:white;
+}
+
+.btn-besci.active,
+.btn-besci:active,
+.open > .btn-besci.dropdown-toggle {
+  background-color: #074d5c;
+  border-color: var(--light-af);
+    color:white;
+}
+
+.btn-besci:hover {
+  background-color: #074d5c;
+  border-color: var(--light-af);
+    color:white;
+}
+
+.btn-besci.focus,
+.btn-besci:focus{
+  background-color: #074d5c;
+  border-color: var(--light-af);
+    color:white;
+}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
   .hero-image {
     background-size: 360px;
