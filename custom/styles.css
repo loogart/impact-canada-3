@@ -1310,7 +1310,7 @@ ul.process li {
 ul.process li:first-child {
   border-left: 8px solid #469ee1;
   padding-left: 2em;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
   padding-top: 0;
 }
 
@@ -1323,7 +1323,7 @@ ul.process li::before {
   border:5px solid var(--baby-blue);
   position: absolute;
   margin-left: -3em;
-  margin-top: .25em;
+  margin-top: 1.5em;
   border-radius: 3em;
 }
 
@@ -1336,7 +1336,7 @@ ul.process li:first-child::before {
   border:5px solid var(--flat-red);
   position: absolute;
   margin-left: -3em;
-  margin-top: 0;
+  margin-top: 2em;
   border-radius: 3em;
 }
 
@@ -1349,7 +1349,7 @@ ul.process li:last-child::after {
   border:5px solid var(--flat-red);
   position: absolute;
   margin-left: -3em;
-  margin-top: 1em;
+  margin-top: -3.5em;
   border-radius: 3em;
 }
 
@@ -1839,6 +1839,20 @@ blockquote.red{
   background-color: #074d5c;
   border-color: var(--light-af);
     color:white;
+}
+
+.step-fellowship{
+  display: flex;
+  align-items: center;
+  column-gap:1em;
+  row-gap:1em;
+}
+
+.icon-step{
+  width:80px;
+  height:80px;
+  object-fit: cover;
+  border-radius: 24px;
 }
 
 
