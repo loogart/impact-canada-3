@@ -1561,6 +1561,26 @@ a.footer-brand {
   color:var(--fellowship-light);
 }
 
+.bg-neutral{
+  color:var(--navy-darkest);
+}
+
+ul.dropdown-menu{
+  border-radius: 12px!important;
+  overflow: hidden;
+  padding:0;
+}
+
+.dropdown-menu li{
+  padding-top:7px;
+  padding-bottom:7px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form-group{
+  margin-bottom:2em;
+}
+
 .grid-item-hero {
   padding: 4em;
   border-radius: 24px;
@@ -1613,6 +1633,13 @@ a.btn-nav {
   justify-content: space-between;
   padding:1.5em;
   border-radius: 24px;
+}
+
+.grid-mini-process{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+   column-gap: 1em;
+  row-gap: 1em;
 }
 
 .box-fellowship{
@@ -1829,6 +1856,12 @@ blockquote.red{
   grid-template-columns: repeat(1, 1fr);
    column-gap: 1em;
   row-gap: 1em;
+  }
+
+  .grid-mini-process{
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0.5em;
+    row-gap: 0.5em;
   }
 
   .box-fellowship{
