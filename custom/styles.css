@@ -1784,10 +1784,18 @@ blockquote.red{
   gap:20px;
   padding-top:50px;
   padding-bottom:50px;
-  border-bottom: 1px solid #385BBF;
+  border-bottom: 1px solid rgb(56, 91, 191);
 }
+
 .icon-and-text:last-of-type{
   border-bottom: none;
+}
+
+.smooth-shadow{
+    box-shadow:
+  0px 3.5px 5.3px rgba(0, 0, 0, 0.028),
+  0px 11.6px 17.9px rgba(0, 0, 0, 0.042),
+  0px 52px 80px rgba(0, 0, 0, 0.07);
 }
 
 
@@ -1860,8 +1868,8 @@ blockquote.red{
 
   .grid-mini-process{
     grid-template-columns: repeat(1, 1fr);
-    column-gap: 0.5em;
-    row-gap: 0.5em;
+    column-gap: .25em;
+    row-gap: .25em;
   }
 
   .box-fellowship{
